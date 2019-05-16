@@ -166,6 +166,8 @@ bool Lista::excluirPosicao(int k) {
     if (getN() != 0) {
         //Verifica se a posição está no intervalo de nós da lista.
         if ((k >= 0) && (k < getN())) {
+            //Desaloca o elemento da posição k
+            delete lista[k];
             //Desloca os nós do fim até a posição k da lista.
             for (int i = k; i < getN(); i++) {
                 lista[i] = lista[i + 1];
@@ -190,8 +192,8 @@ bool Lista::excluirPosicao(int k) {
  */
 bool Lista::excluirFim() {
     if (getN() != 0) {
-        //atribui null para posição final
-        lista[getN() - 1] = (No*)NULL;
+        //desaloca o último elemento
+        delete lista[getN() - 1];
         //Decrementa a quantidade de nós da lista.
         setN(getN() - 1);
         return true;
@@ -217,6 +219,8 @@ bool Lista::excluirValor(int valor) {
         }
         //Verifica se a posição esta dentro do intervalo da lista
         if (j < n) {
+            //Desaloca o elemento da posição k
+            delete lista[j];
             //Desloca os nós do fim até a posição j da lista.
             for (int i = j; i < getN(); i++) {
                 lista[i] = lista[i + 1];
