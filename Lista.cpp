@@ -1,3 +1,10 @@
+/**
+ *
+ * Implementação dos métodos da classe Lista.
+ *
+ */
+
+//Inclui o cabeçalho da classe Lista
 #include "Lista.h"
 
 /**

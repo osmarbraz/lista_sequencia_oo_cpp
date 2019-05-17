@@ -3,9 +3,12 @@
  *
  */
 
+//Declaração de bibliotecas
 #include <cstdlib>
 #include <iostream>
 #include <string>
+
+//Inclui o cabeçalho da classe Lista
 #include "Lista.h"
 
 using namespace std;

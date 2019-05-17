@@ -1,7 +1,8 @@
+//Evita a referência circular
 #ifndef NO_H
 #define NO_H
-//Evita a referencia circular
 
+//Declaração de bibliotecas
 #include <iostream>
 #include <string>
 #include <sstream>   
@@ -26,14 +27,14 @@ public:
      * Construtor com parâmetros.
      *
      * @param dado um valor do tipo inteiro.
-     */
+     */    
     No(int dado);
 
     /**
      * Recuperador de dado.
      *
      * @return Um inteiro com o dado do nó.
-     */
+     */    
     int getDado();
    
      /**
@@ -47,7 +48,7 @@ public:
      * Retorna o valor em String do dado.
      *
      * @return Uma string com o valor do dado do nó.
-     */
+     */    
     string paraString();
 };
 

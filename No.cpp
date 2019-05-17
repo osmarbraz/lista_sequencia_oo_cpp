@@ -1,3 +1,10 @@
+/**
+ *
+ * Implementação dos métodos da classe Nó.
+ *
+ */
+
+//Inclui o cabeçalho da classe No
 #include "No.h"
 
 /**

@@ -1,11 +1,17 @@
+/**
+ * Implementação de Lista Sequencial de forma orientada a objetos.
+ *
+ */
+
+//Evita a referência circular
 #ifndef LISTA_H
 #define LISTA_H
-//Evita a referencia circular
 
+//Declaração de bibliotecas
 #include <iostream>
 #include <string>
 
-//Inclui a classe No
+//Inclui o cabeçalho da classe No
 #include "No.h"
 
 using namespace std;
@@ -15,10 +21,6 @@ using namespace std;
  */
 const int TAMANHO_LISTA = 100;
 
-/**
- * Implementação de Lista Sequencial de forma orientada a objetos.
- *
- */
 class Lista {
 private:
     /**
