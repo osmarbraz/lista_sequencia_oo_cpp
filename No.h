@@ -16,6 +16,9 @@ using namespace std;
  */
 class No {
 private:
+    /**
+     * Dado a ser armazenado no nó.
+     */
     int dado;
 public:
     /**

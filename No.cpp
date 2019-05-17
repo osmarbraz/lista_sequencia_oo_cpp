@@ -46,9 +46,9 @@ void No::setDado(int dado) {
  *
  * @return Uma string com o valor do dado do nó.
  */
-string No::paraString() {   
+string No::paraString() {
     stringstream endereco;
     endereco << this;
-   return "OID: " + endereco.str() +" / dado: " + to_string(getDado());
+    return "OID: " + endereco.str() + " / dado: " + to_string(getDado());
 }
 

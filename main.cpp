@@ -41,12 +41,12 @@ int main(int argc, char** argv) {
                 << "Selecione a opção desejada:\n"
                 << " 1- Listar Nós\n"
                 << " 2- Inserir Nó no início\n"
-                << " 3- Inserir Nó no fim\n"
-                << " 4- Inserir Nó em uma posição especifica\n"
+                << " 3- Inserir Nó em uma posição especifica\n"
+                << " 4- Inserir Nó no fim\n"
                 << " 5- Inserir Nó ordenado\n"
                 << " 6- Remover Nó do início\n"
-                << " 7- Remover Nó do fim\n"
-                << " 8- Remover Nó de uma posição específica\n"
+                << " 7- Remover Nó de uma posição específica\n"
+                << " 8- Remover Nó do fim\n"
                 << " 9- Remover Nó pelo valor\n"
                 << "10- Procurar o dado de uma posição específica\n"
                 << "11- Procurar a posição de um dado\n"
@@ -79,17 +79,6 @@ int main(int argc, char** argv) {
             }
             case 3:
             {
-                //Preenche o valor do dado
-                int dado = leitura();
-                if (lista.inserirFim(dado) == true) {
-                    cout << "\nNó inserido no fim com Sucesso!" << endl;
-                } else {
-                    cout << "\nNó não inserido no fim!" << endl;
-                }
-                break;
-            }
-            case 4:
-            {
                 int k;
                 cout << "\nDigite a posição a ser inserido:";
                 cin >> k;
@@ -99,6 +88,17 @@ int main(int argc, char** argv) {
                     cout << "\nNó inserido na posição " << k << " com Sucesso!" << endl;
                 } else {
                     cout << "\nNó não inserido na posição " << k << "!" << endl;
+                }
+                break;
+            }
+            case 4:
+            {
+                //Preenche o valor do dado
+                int dado = leitura();
+                if (lista.inserirFim(dado) == true) {
+                    cout << "\nNó inserido no fim com Sucesso!" << endl;
+                } else {
+                    cout << "\nNó não inserido no fim!" << endl;
                 }
                 break;
             }
@@ -116,22 +116,13 @@ int main(int argc, char** argv) {
             case 6:
             {
                 if (lista.excluirInicio()) {
-                    cout << "\nO Nó do início foi excluído com Sucesso!" << endl;
+                    cout << "\nNó do início foi excluído com Sucesso!" << endl;
                 } else {
                     cout << "\nNó do início não foi excluído!" << endl;
                 }
                 break;
             }
             case 7:
-            {
-                if (lista.excluirFim()) {
-                    cout << "\nO Nó da fim foi excluído com Sucesso!" << endl;
-                } else {
-                    cout << "\nNó do fim não foi excluído!" << endl;
-                }
-                break;
-            }
-            case 8:
             {
                 int k;
                 cout << "\nDigite a posição a ser excluída:";
@@ -140,6 +131,15 @@ int main(int argc, char** argv) {
                     cout << "\nO valor da posição " << k << " foi excluído com Sucesso!" << endl;
                 } else {
                     cout << "\nValor não foi excluído!" << endl;
+                }
+                break;
+            }
+            case 8:
+            {
+                if (lista.excluirFim()) {
+                    cout << "\nNó do fim foi excluído com Sucesso!" << endl;
+                } else {
+                    cout << "\nNó do fim não foi excluído!" << endl;
                 }
                 break;
             }
@@ -174,7 +174,7 @@ int main(int argc, char** argv) {
                 int chave;
                 cout << "\nDigite o valor do dado a ser procurado:";
                 cin >> chave;
-                int posicao = lista.procuraValor(chave);
+                int posicao = lista.procurarValor(chave);
                 cout << "\nO valor " << chave << " esta na posição " << posicao << endl;
                 break;
             }
@@ -193,9 +193,8 @@ int main(int argc, char** argv) {
                 cout << "\nLista está vazia : " << lista.estaVazia() << endl;
                 break;
             }
-        }//Fim Switch
-    }//Fim While
-
+        }//Fim switch
+    }//Fim while
     return 0;
-}
+}//Fim main
 

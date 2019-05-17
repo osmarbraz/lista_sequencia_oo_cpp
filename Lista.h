@@ -131,7 +131,7 @@ public:
      * @param valor O valor de um nó a ser procurado na lista.
      * @return A posição de valor na lsita.
      */
-    int procuraValor(int valor);
+    int procurarValor(int valor);
 
     /**
      * Lista os dados da lista.

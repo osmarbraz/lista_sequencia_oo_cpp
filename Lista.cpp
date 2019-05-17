@@ -272,7 +272,7 @@ int Lista::procurarPosicao(int k) {
  * @param valor O valor de um nó a ser procurado na lista.
  * @return A posição de valor na lsita.
  */
-int Lista::procuraValor(int valor) {
+int Lista::procurarValor(int valor) {
     if (getN() != 0) {
         int i = 0;
         //Procura a posição do nó na lista.
