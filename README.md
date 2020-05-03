@@ -1,5 +1,11 @@
 # Implementação Lista utilizando estrutura sequencial(vetor) de forma orientada a objeto em C++.
-Operações implementadas:<br>
+
+## Características:<br>
+- Lista sequencial em vetor<br>
+- Utiliza orientação a objetos<br>
+- Os dados armazenados são do tipo Nó<br>
+
+## Operações implementadas:<br>
 - 1 - Listar Nós<br>
 - 2 - Inserir Nó no início<br>
 - 3 - Inserir Nó em uma posição especifica<br>
